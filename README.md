@@ -10,13 +10,13 @@ Usage
 Sample node configuration to install:
 
     node 'mynode1' {
-	class { 'windows_service_installer':
-		binary_name => "DemoService.exe", 
-		target_path => "C:\\windows_services\\demoservice",
-		service_name => "MyDemoService",
-		display_name => "My Demo Service",
-		description => "My Demo Service description",  
-	}
+	    class { 'windows_service_installer':
+	            binary_name => "DemoService.exe", 
+		    target_path => "C:\\windows_services\\demoservice",
+		    service_name => "MyDemoService",
+		    display_name => "My Demo Service",
+		    description => "My Demo Service description",  
+	    }
     }
 
 Pre-requisite:
