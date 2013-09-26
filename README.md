@@ -9,7 +9,7 @@ Usage
 ======
 Sample node configuration to install:
 
-node 'mynode1' {
+    node 'mynode1' {
 	class { 'windows_service_installer':
 		binary_name => "DemoService.exe", 
 		target_path => "C:\\windows_services\\demoservice",
@@ -17,7 +17,7 @@ node 'mynode1' {
 		display_name => "My Demo Service",
 		description => "My Demo Service description",  
 	}
-}
+    }
 
 Pre-requisite:
 ===============
