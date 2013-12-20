@@ -1,5 +1,5 @@
-class windows_service_installer($binary_name, $target_path, $service_name, $display_name, $description) {
-include 'param::powershell'
+define windows_service_installer($binary_name, $target_path, $service_name, $display_name, $description) {
+  include 'param::powershell'
   
   $installUtil_filepath = "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\InstallUtil.exe"
     
